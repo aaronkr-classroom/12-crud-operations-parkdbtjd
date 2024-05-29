@@ -69,8 +69,6 @@ userSchema.virtual("fullName").get(function () {
   return `${this.name.first} ${this.name.last}`;
 }); // 사용자의 풀 네임을 얻기 위한 가상 속성 추가
 
-module.exports = mongoose.model("User", userSchema);
-
 /**
  * 노트: 이 책을 쓰는 시점에 Mongoose 메소드는 더 이상 의존하지 않는 어휘 this를
  * 사용하기 때문에 화살표 함수를 사용할 수 없다.

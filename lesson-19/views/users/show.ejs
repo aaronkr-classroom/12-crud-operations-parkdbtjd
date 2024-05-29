@@ -19,9 +19,26 @@
         <div class="col col-lg-10">
           <table class="table table-striped table-hover mt-5 mb-5">
             <tbody>
-              <!-- 
-                @TODO: 사용자 데이터를 보여주기 위한 테이블 추가 
-              -->
+              <tr>
+                <th scope="col">Username</th>
+                <td><%= user.username %></td>
+              </tr>
+              <tr>
+                <th scope="col">Password</th>
+                <th><%= user.password %></th>
+              </tr>
+              <tr>
+                <th scope="col">Created</th>
+                <th><%= user.created %></th>
+              </tr>
+              <tr>
+                <th scope="col">Updated At</th>
+                <th><%= user.updatedAt %></th>
+              </tr>
+              <tr>
+                <th scope="col">ID</th>
+                <th><%= user._id %></th>
+              </tr>
             </tbody>
           </table>
         </div>
